@@ -7,15 +7,15 @@ const WeatherCard = ({ weatherData }) => {
 
 
   return (
-    <div className="weather-card">
+    <article className="weather-card">
     <p>{dt_txt}</p>
     <img
       src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
       alt={description}
     />
     <p>{description}</p>
-    <p>{temp}Â°C</p>
-  </div>
+    <p>{temp}°C</p>
+  </article>
   );
 };
 

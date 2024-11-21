@@ -1,0 +1,25 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.weather-card {
+    background-color: $cuarto-color;
+    color: $primmary-color;
+    padding: 20px;
+    text-align: center;
+    @include shadow(rgba($black, 0.5));
+  
+    .temperature {
+      font-size: 2rem;
+    }
+  
+    .description {
+      text-transform: capitalize;
+    }
+  
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+  }
+  

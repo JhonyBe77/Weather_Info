@@ -1,0 +1,17 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.weather-list {
+  .weather-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: $ipad-breakpoint) {
+  .weather-list .weather-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
